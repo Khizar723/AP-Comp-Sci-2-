@@ -1,0 +1,175 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="banner">
+    <h1 class="header">
+      IVY LEAGUE ADMISSIONS CALCULATOR
+    </h1>
+  </div>
+
+  <div class="admissions-input"></div>
+  <form id="admissions-form">
+    <table>
+      <tr>
+        <td colspan="2" style="text-align: left;font-size: 13px;"><b>Note</b>: You can Enter Either SAT or ACT Score Not Both<br><br></td>
+      </tr>
+      <tr>
+        <td>SAT SuperScore out of 1600</td>
+        <td>ACT SuperScore out of 36</td>
+        <td>Unweighted GPA out of 100</td>
+      </tr>
+      <tr>
+        <td><input type="number" placeholder="Enter SAT Score Here" id="sat" class="text-box"></td>
+        <td><input type="number"  placeholder="Enter ACT Score Here" id="act" class="text-box"></td>
+        <td><input type="number" id="gpa"  placeholder="Enter GPA Here" class="text-box"></td>
+      </tr>
+    </table>
+  
+
+    <br>
+    <fieldset>
+      <legend>Select your Extracurriculars</legend>
+      <table style="width:100%">
+        <tr>
+          <th>Extracurricular Set 1</th>
+          <th>Extracurricular Set 2</th>
+        </tr>
+        <tr>
+          <td>
+            <p>
+              <br><label>Select a National Level Extracurricular <br></label>
+              <select id="national1">
+                <option value="0" id="none1">--select one--</option>
+                <option value="15" id="SciOlyNational1">National Science Olympiad</option>
+                <option value="10" id="NHS1">National Honor Society</option>
+                <option value="25" id="isef1">International Science & Engineering Fair</option>
+                <option value="5" id="essay1">National Russian Essay Contest</option>
+              </select>
+            </p>
+          </td>
+          <!-- THIS IS OUT OF 25 -->
+          <td>
+            <p>
+              <br><label>Select a National Level Extracurricular <br></label>
+              <select id="national2">
+                <option value="0" id="none2">--select one--</option>
+                <option value="15" id="SciOlyNational2">National Science Olympiad</option>  
+                <option value="10" id="NHS2">National Honor Society</option>
+                <option value="25" id="isef2">International Science & Engineering Fair</option>
+                <option value="5" id="essay2">National Russian Essay Contest</option>
+              </select>
+            </p>
+          </td>
+          <!-- THIS IS OUT OF 25 -->
+        </tr>
+        <tr>
+          <td>
+            <p>
+              <br><label>Select a State Level Extracurricular <br></label>
+              <select id="state1">
+                <option value="0">--select one--</option>
+                <option value="11">State Science Olympiad</option>
+                <option value="20">Science Talent Search</option>
+                <option value="10">Mu Alpha Theta Honors Society</option>
+                <option value="15">Solar Car Team</option>
+              </select>
+            </p>
+          </td>
+          <!-- THIS IS OUT OF 20 -->
+          <td>
+            <p>
+              <br><label>Select a State Level Extracurricular <br></label>
+              <select id="state2">
+                <option value="0">--select one--</option>
+                <option value="11">State Science Olympiad</option>
+                <option value="20">Science Talent Search</option>
+                <option value="10">Mu Alpha Theta Honors Society</option>
+                <option value="15">Solar Car Team</option>
+              </select>
+            </p>
+          </td>
+          <!-- THIS IS OUT OF 20 -->
+        <tr>
+          <td>
+            <p>
+              <br><label>Select a Regional Level Extracurricular <br></label>
+              <select id="regional1">
+                <option value="0">--select one--</option>
+                <option value="7">Regional Science Olympiad</option>
+                <option value="13">NYCSEF or equivalent</option>
+                <option value="10">Research Program</option>
+                <option value="11">Math Team</option>
+              </select>
+            </p>
+          </td>
+            <!-- THIS IS OUT OF 15 -->
+          <td>
+            <p>
+              <br><label>Select a Regional Level Extracurricular <br></label>
+              <select id="regional2">
+                <option value="0">--select one--</option>
+                <option value="7">Regional Science Olympiad</option>
+                <option value="13">NYCSEF or equivalent</option>
+                <option value="10">Research Program</option>
+                <option value="11">Math Team</option>
+              </select>
+            </p>
+          </td>
+            <!-- THIS IS OUT OF 15 -->
+        <tr>
+          <td>
+            <p>
+              <br><label>Select a School Level Extracurricular <br></label>
+              <select id="school1">
+                <option value="0">--select one--</option>
+                <option value="9">Student Council</option>
+                <option value="7">Varsity/JV Athletics</option>
+                <option value="4">Clubs</option>
+                <option value="6">Theater Production Show</option>
+              </select>
+            </p>
+          </td>
+          <!-- THIS IS OUT OF 10 -->
+          <td>
+            <p>
+              <br><label>Select a School Level Extracurricular <br></label>
+              <select id="school2">
+                <option value="0">--select one--</option>
+                <option value="9">Student Council</option>
+                <option value="7">Varsity/JV Athletics</option>
+                <option value="4">Clubs</option>
+                <option value="6">Theater Production Sho</option>
+              </select>
+            </p>
+          </td>
+          <!-- THIS IS OUT OF 10 -->
+        </tr>
+
+        </tr>
+      </table>
+      
+
+    </fieldset>
+
+    <br>
+    <div class="admissions-form-input">
+      <input type="submit" value="Submit" id="button" class="btn btn-red">
+    </div>
+<br>
+     <div id="display"> Results: <span id="result"></span> </div><br>
+  </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
