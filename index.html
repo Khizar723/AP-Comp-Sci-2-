@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script></script>
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <title>Admissions Chance Calculator</title>
 </head>
 
 <body>
@@ -20,7 +20,8 @@
   <form id="admissions-form">
     <table>
       <tr>
-        <td colspan="2" style="text-align: left;font-size: 13px;"><b>Note</b>: You can Enter Either SAT or ACT Score Not Both<br><br></td>
+        <td colspan="2" style="text-align: left;font-size: 13px;"><b>Note</b>: You can enter either SAT or ACT Score, or
+          Both<br><br></td>
       </tr>
       <tr>
         <td>SAT SuperScore out of 1600</td>
@@ -29,11 +30,11 @@
       </tr>
       <tr>
         <td><input type="number" placeholder="Enter SAT Score Here" id="sat" class="text-box"></td>
-        <td><input type="number"  placeholder="Enter ACT Score Here" id="act" class="text-box"></td>
-        <td><input type="number" id="gpa"  placeholder="Enter GPA Here" class="text-box"></td>
+        <td><input type="number" placeholder="Enter ACT Score Here" id="act" class="text-box"></td>
+        <td><input type="number" id="gpa" placeholder="Enter GPA Here" class="text-box"></td>
       </tr>
     </table>
-  
+
 
     <br>
     <fieldset>
@@ -62,7 +63,7 @@
               <br><label>Select a National Level Extracurricular <br></label>
               <select id="national2">
                 <option value="0" id="none2">--select one--</option>
-                <option value="15" id="SciOlyNational2">National Science Olympiad</option>  
+                <option value="15" id="SciOlyNational2">National Science Olympiad</option>
                 <option value="10" id="NHS2">National Honor Society</option>
                 <option value="25" id="isef2">International Science & Engineering Fair</option>
                 <option value="5" id="essay2">National Russian Essay Contest</option>
@@ -111,7 +112,7 @@
               </select>
             </p>
           </td>
-            <!-- THIS IS OUT OF 15 -->
+          <!-- THIS IS OUT OF 15 -->
           <td>
             <p>
               <br><label>Select a Regional Level Extracurricular <br></label>
@@ -124,7 +125,7 @@
               </select>
             </p>
           </td>
-            <!-- THIS IS OUT OF 15 -->
+          <!-- THIS IS OUT OF 15 -->
         <tr>
           <td>
             <p>
@@ -147,7 +148,7 @@
                 <option value="9">Student Council</option>
                 <option value="7">Varsity/JV Athletics</option>
                 <option value="4">Clubs</option>
-                <option value="6">Theater Production Sho</option>
+                <option value="6">Theater Production Show</option>
               </select>
             </p>
           </td>
@@ -156,7 +157,7 @@
 
         </tr>
       </table>
-      
+
 
     </fieldset>
 
@@ -164,8 +165,8 @@
     <div class="admissions-form-input">
       <input type="submit" value="Submit" id="button" class="btn btn-red">
     </div>
-<br>
-     <div id="display"> Results: <span id="result"></span> </div><br>
+    <br>
+    <div id="display"> Your Chances of Admissions are: <span id="result"></span> </div><br>
   </form>
   </div>
 
